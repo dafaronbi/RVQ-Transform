@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>A Modular Approach to Music Generration</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>A Modular Approach to Music Generation:</h1>
+							<p class="major">Adding music controls to neural audio compression models</p>
+							<ul class="actions stacked">
+								<li><a href="https://ieeexplore.ieee.org/document/11402273" class="button big wide smooth-scroll-middle">Paper</a>
+									<a href="https://huggingface.co/dfaronbi/EnCodec-Transformer" class="button big wide smooth-scroll-middle">Model and Data (Hugging Face)</a>
+									<a href="https://github.com/dafaronbi/RVQ-Transform/tree/main" class="button big wide smooth-scroll-middle">Github</a>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+					
+
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Approach Diagram</h2>
+							<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p> -->
+							<div class="items style1 medium onscroll-fade-in">
+
+								<section>
+								<div class="image">
+									<img src="images/modular_diagram.svg" />
+								</div>
+						
+					</section>
+								<section>
+									<!-- <span class="icon solid style2 major fa-chart-bar"></span>
+									<h3>Dolor</h3> -->
+									<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p> -->
+								</section>
+							</div>
+						</div>
+					</section>
+
+					
+
+				<!-- Two -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h3>Transformation Training</h3>
+							<p>Randomly select new pitch of same instrument during training</p>
+						</div>
+						<div class="content">
+							<!-- <h2>Magna etiam feugiat</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum dolor sit amet.</p>
+							<ul class="actions stacked">
+								<li><a href="#" class="button">Learn More</a></li>
+							</ul> -->
+							
+						</div>
+						<div class="image">
+							<img src="images/transform_model.svg" alt="" style="width: 50em; height: 18em;" />
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Hierarchichal Token Usage</h2>
+							<p>We notice significant increase in quality when more than one hierarchichal token is used doing transformation. Using 2-3 tokens seems to result in about the same quality</p>
+							<ul class="actions stacked">
+								<!-- <li><a href="#" class="button">Learn More</a></li> -->
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/Token_Bar.svg" alt="" />
+						</div>
+					</section>
+
+				<!-- Four -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+						<div class="content">
+							<h2>Time Difference</h2>
+							<p>We show that transformation from the compresssed audio space is significantly faster than transformation from traditional audio samples</p>
+							<ul class="actions stacked">
+								<!-- <li><a href="#" class="button">Learn More</a></li> -->
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/Time.svg" alt="" />
+						</div>
+					</section>
+
+					
+
+				<!-- Six -->
+					<section class="wrapper style1 align-center">
+						<div class="inner">
+							<h2>Audio Samples</h2>
+							<p>3 different audio samples tranformed across an octave</p>
+							<div class="items style1 medium onscroll-fade-in">
+								<section>
+									<h3>Start MIDI note 55</h3>
+									<audio controls>
+										<source src="audio/inst 1/inst 1 START 55.wav" type="audio/ogg">
+									</audio>
+								</section>
+								<section>
+									<h3>Transforms across octave</h3>
+									<audio controls>
+										<source src="audio/inst 1/inst 1 36.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 1/inst 1 37.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 1/inst 1 38.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 1/inst 1 39.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 1/inst 1 40.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 1/inst 1 41.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 1/inst 1 42.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 1/inst 1 43.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 1/inst 1 44.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 1/inst 1 45.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 1/inst 1 46.wav" type="audio/ogg">
+									</audio>
+								</section>
+								<section>
+									<!-- <span class="icon solid style2 major fa-chart-bar"></span>
+									<h3>Dolor</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p> -->
+								</section>
+								
+
+								<section>
+									<h3>Start MIDI note 50</h3>
+									<audio controls>
+										<source src="audio/inst 2/inst 2 START 50.wav" type="audio/ogg">
+									</audio>
+								</section>
+								<section>
+									<h3>Transforms across octave</h3>
+									<audio controls>
+										<source src="audio/inst 2/inst 2 36.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 2/inst 2 37.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 2/inst 2 38.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 2/inst 2 39.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 2/inst 2 40.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 2/inst 2 41.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 2/inst 2 42.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 2/inst 2 43.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 2/inst 2 44.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 2/inst 2 45.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 2/inst 2 46.wav" type="audio/ogg">
+									</audio>
+								</section>
+								<section>
+									<!-- <span class="icon solid style2 major fa-chart-bar"></span>
+									<h3>Dolor</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p> -->
+								</section>
+
+								<section>
+									<h3>Start MIDI note 108</h3>
+									<audio controls>
+										<source src="audio/inst 3/inst 3 START 108.wav" type="audio/ogg">
+									</audio>
+								</section>
+								<section>
+									<h3>Transforms across octave</h3>
+									<audio controls>
+										<source src="audio/inst 3/inst 3 36.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 3/inst 3 37.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 3/inst 3 38.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 3/inst 3 39.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 3/inst 3 40.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 3/inst 3 41.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 3/inst 3 42.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 3/inst 3 43.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 3/inst 3 44.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 3/inst 3 45.wav" type="audio/ogg">
+									</audio>
+									<audio controls>
+										<source src="audio/inst 3/inst 3 46.wav" type="audio/ogg">
+									</audio>
+								</section>
+								<section>
+									<!-- <span class="icon solid style2 major fa-chart-bar"></span>
+									<h3>Dolor</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p> -->
+								</section>
+							</div>
+						</div>
+					</section>
+
+				
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
